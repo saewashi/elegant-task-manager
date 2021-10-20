@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-selector {
+  background: linear-gradient(270deg, #ffe5b4, #ffb52a, #70dcc0);
+  background-size: 600% 600%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-animation: AnimationName 59s ease infinite;
+  -moz-animation: AnimationName 59s ease infinite;
+  animation: AnimationName 59s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.app-wrapper {
+  background-color: burlywood;
+  width: 25%;
+  min-width: 450px;
+  height: 600px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.header h1 {
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  margin: 50px 20px 60px 20px;
+  font-family: 'Italianno', cursive;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list {
+  width: 90%;
+  margin: auto;
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #aaa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+.task-input {
+  width: 350px;
+  min-width: 250px;
+  padding: 15px 10px 10px 20px;
+  margin-right: 10px;
+  font-family: 'Italianno', cursive;
+  font-size: 20px;
+  color: #ccc;
+  background-color: black;
+  border: 1px solid #444;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0px 1px rgba(15, 82, 2, 0.3);
+}
+
+.buttons {
+  display: flex;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.add-task-btn {
+  min-width: 100px;
+  background-color: #F3E5AB;
+  color: #000;
+  border: none;
+  font-family: 'Italianno', cursive;
+  font-size: 25px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding-bottom: 5px;
+}
+
+.list-item span {
+  color: Black;
+  
+}
+
+.task-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btn-delete i {
+  font-size: 16px;
+  color:black;
+  margin-right: 20px;
+}
+
+.btn-edit i {
+  font-size: 16px;
+  color: black;
+  margin-right: 20px;
+}
+
+.clear-btn {
+  width: 100px;
+  height: 35px;
+  background-color:#F3E5AB;
+  color: #000;
+  border: none;
+  font-family: 'Italianno', cursive;
+  font-size: 25px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+}
+
+.no-tasks {
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+  font-family: 'Italianno', cursive;
+  
+}
